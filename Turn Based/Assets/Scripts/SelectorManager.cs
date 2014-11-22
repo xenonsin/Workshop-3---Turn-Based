@@ -10,12 +10,14 @@ public class SelectorManager : MonoBehaviour
     public GameObject allyArrow;
     public int playerTeam = 1;
 
-
+    private Animator _animator;
     private BattleManager _battleManager;
     private bool _playerTurn = false;
     private Entity _target;
     private int _index = 0;
     private Entity _turn;
+
+    private bool canAttack = true;
 
     public List<Entity> enemyList = new List<Entity>();
 
@@ -80,8 +82,9 @@ public class SelectorManager : MonoBehaviour
             {
                 ChangeTarget(1);
             }
-            else if (Input.GetKeyDown(KeyCode.Z))
+            else if (canAttack && Input.GetKeyDown(KeyCode.Z))
             {
+                canAttack = false;
                 StartCoroutine(AttackTarget());
             }
 	    }
@@ -97,15 +100,16 @@ public class SelectorManager : MonoBehaviour
         Vector3 pointA = _turn.transform.position;
         Vector3 pointB = _target.transform.position;
         bool reachedTarget = false;
-
+        _animator.Play("attack");
         while (!reachedTarget)
         {
             yield return StartCoroutine(MoveObject(_turn.transform, pointA, pointB, 3.0f));
             yield return StartCoroutine(MoveObject(_turn.transform, pointB, pointA, 3.0f));
             reachedTarget = true;
         }
+        _animator.Play("idle");
 
-        yield return new WaitForSeconds(2f);
+        canAttack = true;
         _turn.EndTurn();
     }
 
@@ -171,11 +175,13 @@ public class SelectorManager : MonoBehaviour
         {
             SetAllyArrow(false);
             _turn = _battleManager.CurrentTurn();
+            _animator = _turn.GetComponent<Animator>();
             SetAllyArrow(true);
         }
         else
         {
             _turn = _battleManager.CurrentTurn();
+            _animator = _turn.GetComponent<Animator>();
             SetAllyArrow(true);
         }
 

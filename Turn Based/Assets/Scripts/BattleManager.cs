@@ -19,7 +19,7 @@ public class BattleManager : MonoBehaviour
 	// Use this for initialization
 	void Awake ()
 	{
-	    FindAllFighters();
+        FindAllFighters();
         if (allEntities != null)
             SortBySpeed();
 	   

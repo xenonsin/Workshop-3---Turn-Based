@@ -1,0 +1,476 @@
+fileFormatVersion: 2
+guid: 12581afa0face494fba000b37868a16d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dozla_berserker_axe_0
+    21300002: dozla_berserker_axe_1
+    21300004: dozla_berserker_axe_2
+    21300006: dozla_berserker_axe_3
+    21300008: dozla_berserker_axe_4
+    21300010: dozla_berserker_axe_5
+    21300012: dozla_berserker_axe_6
+    21300014: dozla_berserker_axe_7
+    21300016: dozla_berserker_axe_8
+    21300018: dozla_berserker_axe_9
+    21300020: dozla_berserker_axe_10
+    21300022: dozla_berserker_axe_11
+    21300024: dozla_berserker_axe_12
+    21300026: dozla_berserker_axe_13
+    21300028: dozla_berserker_axe_14
+    21300030: dozla_berserker_axe_15
+    21300032: dozla_berserker_axe_16
+    21300034: dozla_berserker_axe_17
+    21300036: dozla_berserker_axe_18
+    21300038: dozla_berserker_axe_19
+    21300040: dozla_berserker_axe_20
+    21300042: dozla_berserker_axe_21
+    21300044: dozla_berserker_axe_22
+    21300046: dozla_berserker_axe_23
+    21300048: dozla_berserker_axe_24
+    21300050: dozla_berserker_axe_25
+    21300052: dozla_berserker_axe_26
+    21300054: dozla_berserker_axe_27
+    21300056: dozla_berserker_axe_28
+    21300058: dozla_berserker_axe_29
+    21300060: dozla_berserker_axe_30
+    21300062: dozla_berserker_axe_31
+    21300064: dozla_berserker_axe_32
+    21300066: dozla_berserker_axe_33
+    21300068: dozla_berserker_axe_34
+    21300070: dozla_berserker_axe_35
+    21300072: dozla_berserker_axe_36
+    21300074: dozla_berserker_axe_37
+    21300076: dozla_berserker_axe_38
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: dozla_berserker_axe_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 279
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 271
+        width: 51
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 272
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 276
+        width: 71
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_4
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 280
+        width: 70
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 277
+        width: 65
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_6
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 271
+        width: 31
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_7
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 209
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 213
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 200
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_10
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 235
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_11
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 236
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_12
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 237
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_13
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 235
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_14
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 233
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_15
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 234
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_16
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 229
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_17
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 231
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 193
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_19
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 193
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_20
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 198
+        width: 38
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_21
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 199
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_22
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 199
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_23
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 198
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_24
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 194
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_25
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 201
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_26
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 125
+        width: 56
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_27
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 123
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_28
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 123
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_29
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 124
+        width: 37
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 71
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_31
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 71
+        width: 69
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 73
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_33
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 71
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_34
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 11
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_35
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 11
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_36
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 13
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_37
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 15
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dozla_berserker_axe_38
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 16
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

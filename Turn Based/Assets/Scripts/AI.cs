@@ -6,9 +6,9 @@ public class AI : MonoBehaviour
 {
     public float attackDelay = 10f;
     public float speed = 10f;
-    public List<Entity> enemyList = new List<Entity>(); 
+    public List<Entity> enemyList = new List<Entity>();
 
-
+    private Animator _animator;
     private BattleManager _battleManager;
     private Warrior _self;
 
@@ -37,21 +37,21 @@ public class AI : MonoBehaviour
     IEnumerator AttackRandomTarget()
     {     
         yield return new WaitForSeconds(attackDelay);
-        int ranIndex = Random.Range(0, enemyList.Count -1);
+        int ranIndex = Random.Range(0, enemyList.Count);
         enemyList[ranIndex].Hit(_self.damage);
         Debug.Log(_self.name + " has attacked " + enemyList[ranIndex].Name + " for " + _self.damage + " damage!");
 
         Vector3 pointA = transform.position;
         Vector3 pointB = enemyList[ranIndex].transform.position;
         bool reachedTarget = false;
-
+        _animator.Play("attack");
         while (!reachedTarget) {
             yield return StartCoroutine(MoveObject(transform, pointA, pointB, 3.0f));
             yield return StartCoroutine(MoveObject(transform, pointB, pointA, 3.0f));
             reachedTarget = true;
         }
-
-        yield return new WaitForSeconds(1f);
+        _animator.Play("idle");
+        yield return new WaitForSeconds(.5f);
         _self.EndTurn();
 
     }
@@ -71,6 +71,7 @@ public class AI : MonoBehaviour
     {
         _battleManager = GameObject.FindGameObjectWithTag("Battle Manager").GetComponent<BattleManager>();
         _self = GetComponent<Warrior>();
+        _animator = GetComponent<Animator>();
     }
 	// Use this for initialization
 	void Start () {

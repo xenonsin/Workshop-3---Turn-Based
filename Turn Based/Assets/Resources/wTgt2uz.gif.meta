@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: 86ea8a5039fd3984eba98315f0877149
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wTgt2uz_0
+    21300002: wTgt2uz_1
+    21300004: wTgt2uz_2
+    21300006: wTgt2uz_3
+    21300008: wTgt2uz_4
+    21300010: wTgt2uz_5
+    21300012: wTgt2uz_6
+    21300014: wTgt2uz_7
+    21300016: wTgt2uz_8
+    21300018: wTgt2uz_9
+    21300020: wTgt2uz_10
+    21300022: wTgt2uz_11
+    21300024: wTgt2uz_12
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    textureFormat: -3
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: wTgt2uz_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wTgt2uz_1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 305
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wTgt2uz_2
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 305
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wTgt2uz_3
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 306
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wTgt2uz_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 309
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wTgt2uz_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 310
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wTgt2uz_6
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 312
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wTgt2uz_7
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 312
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wTgt2uz_8
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 313
+        width: 57
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wTgt2uz_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 314
+        width: 59
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wTgt2uz_10
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 353
+        width: 84
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wTgt2uz_11
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 353
+        width: 80
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wTgt2uz_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 351
+        width: 87
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -105,7 +105,7 @@ public class SelectorManager : MonoBehaviour
             reachedTarget = true;
         }
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         _turn.EndTurn();
     }
 
@@ -153,10 +153,14 @@ public class SelectorManager : MonoBehaviour
         {
             if (enemyList[i].IsDead)
                 toRemove.Enqueue(i);
+
+            foreach (Transform child in enemyList[i].transform)
+                child.gameObject.SetActive(false);
         }
         foreach (var i in toRemove)
         {
             enemyList.RemoveAt(i);
+            
         }
     }
     void OnTurn()
@@ -177,7 +181,7 @@ public class SelectorManager : MonoBehaviour
 
 
 
-        if (_playerTurn)
+        if (_playerTurn && enemyList.Count > 0)
             ActivateArrow();
         else if (!_playerTurn && _target != null)
         {

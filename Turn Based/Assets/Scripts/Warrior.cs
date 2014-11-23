@@ -4,7 +4,7 @@ using System.Collections;
 public class Warrior : Entity
 {
 
-    public string name;
+    public string nam;
     public float maxhp = 1f;
     public float speed = 1f;
     public float damage = 1f;
@@ -15,7 +15,7 @@ public class Warrior : Entity
     // Use this for initialization
     public override void Awake()
     {
-        Name = name;
+        Name = nam;
         MaxHealth = maxhp;
         Damage = damage;
         Speed = speed;

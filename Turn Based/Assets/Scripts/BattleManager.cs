@@ -8,6 +8,10 @@ public class BattleManager : MonoBehaviour
     public delegate void Notification();
     public static event Notification NewTurn;
 
+    public delegate void System();
+
+    public static event System Ready;
+
     public float TimeDelayBetweenTurns = 2f;
 
     public GameObject[] allEntities;
@@ -19,16 +23,18 @@ public class BattleManager : MonoBehaviour
 	// Use this for initialization
 	void Awake ()
 	{
-        FindAllFighters();
-        if (allEntities != null)
-            SortBySpeed();
-	   
+
+
+
 	}
 
     void Start()
     {
-        
-        StartTurn();
+        FindAllFighters();
+        if (allEntities != null)
+            SortBySpeed();
+        if (Ready != null)
+            Ready();
     }
 
     void OnEnable()
@@ -36,19 +42,20 @@ public class BattleManager : MonoBehaviour
         TurnCount = 1;
         isPlaying = true;
         Entity.EndedTurn += NextTurn;
+        SelectorManager.Ready += StartTurn;
         //Entity.Dead += RemoveDead;
         // Player.Dead += StopPlaying;
-
-
     }
 
     void OnDisable()
     {
         Entity.EndedTurn -= NextTurn;
+        SelectorManager.Ready -= StartTurn;
        // Entity.Dead -= RemoveDead;
        // Player.Dead -= StopPlaying;
 
     }
+
 
     void StartTurn()
     {

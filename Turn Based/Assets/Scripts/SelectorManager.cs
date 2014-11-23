@@ -1,4 +1,5 @@
 ﻿
+using UnityEditor;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,6 +7,9 @@ using System.Collections.Generic;
 [RequireComponent(typeof(BattleManager))]
 public class SelectorManager : MonoBehaviour
 {
+    public delegate void System();
+    public static event System Ready;
+
     public GameObject attackArrow;
     public GameObject allyArrow;
     public int playerTeam = 1;
@@ -24,8 +28,10 @@ public class SelectorManager : MonoBehaviour
     void OnEnable()
     {
         BattleManager.NewTurn += OnTurn;
+        BattleManager.Ready += Initialize;
         Entity.Dead += RemoveDead;
 
+        
     }
 
     void OnDisable()
@@ -34,17 +40,24 @@ public class SelectorManager : MonoBehaviour
         Entity.Dead -= RemoveDead;
     }
 
+    void Initialize()
+    {
+        InstantiateSelectorArrows();
+        if (Ready != null)
+            Ready();
+    }
+
 	// Use this for initialization
 	void Awake ()
 	{
 	    _battleManager = GetComponent<BattleManager>();
 
-	    
+        
 	}
 
     void Start()
     {
-        InstantiateSelectorArrows();
+       Debug.Log("MAKE EVENTS WHEN ALL IS READY.");
     }
 
     void InstantiateSelectorArrows()
@@ -55,12 +68,18 @@ public class SelectorManager : MonoBehaviour
             offset.y += 1f;
             
             GameObject go = Instantiate(attackArrow, offset, Quaternion.identity) as GameObject;
-            go.transform.parent = obj.transform;
-            go.SetActive(false);
+            if (go != null)
+            {
+                go.transform.parent = obj.transform;
+                go.SetActive(false);
+            }
 
             GameObject gob = Instantiate(allyArrow, offset, Quaternion.identity) as GameObject;
-            gob.transform.parent = obj.transform;
-            gob.SetActive(false);
+            if (gob != null)
+            {
+                gob.transform.parent = obj.transform;
+                gob.SetActive(false);
+            }
 
             //Add to enemy list if entity is not on the player's team.
             var en = obj.GetComponent<Entity>();   
@@ -140,14 +159,16 @@ public class SelectorManager : MonoBehaviour
 
     void SetArrow(bool val)
     {
-        var targetArrow = getChildGameObject(_target.gameObject, "attackArrow(Clone)");
-        targetArrow.SetActive(val);
+        var targetArrow = GetChildGameObject(_target.gameObject, "attackArrow(Clone)");
+        if (targetArrow)
+            targetArrow.SetActive(val);
     }
 
     void SetAllyArrow(bool val)
     {
-        var targetArrow = getChildGameObject(_turn.gameObject, "allyarrow(Clone)");
-        targetArrow.SetActive(val);
+        var targetArrow = GetChildGameObject(_turn.gameObject, "allyarrow(Clone)");
+        if (targetArrow)
+            targetArrow.SetActive(val);
     }
 
     void RemoveDead()
@@ -203,7 +224,7 @@ public class SelectorManager : MonoBehaviour
         SetArrow(true);
     }
 
-    static public GameObject getChildGameObject(GameObject fromGameObject, string withName)
+    static public GameObject GetChildGameObject(GameObject fromGameObject, string withName)
     {
         //Author: Isaac Dart, June-13.
         Transform[] ts = fromGameObject.transform.GetComponentsInChildren<Transform>(true);

@@ -21,7 +21,7 @@ public class SelectorManager : MonoBehaviour
     private int _index = 0;
     private Entity _turn;
 
-    private bool canAttack = true;
+    private bool canAttack = false;
 
     public List<Entity> enemyList = new List<Entity>();
 
@@ -57,7 +57,7 @@ public class SelectorManager : MonoBehaviour
 
     void Start()
     {
-       Debug.Log("MAKE EVENTS WHEN ALL IS READY.");
+
     }
 
     void InstantiateSelectorArrows()
@@ -128,7 +128,7 @@ public class SelectorManager : MonoBehaviour
         }
         _animator.Play("idle");
 
-        canAttack = true;
+        
         _turn.EndTurn();
     }
 
@@ -209,7 +209,10 @@ public class SelectorManager : MonoBehaviour
 
 
         if (_playerTurn && enemyList.Count > 0)
+        {
             ActivateArrow();
+            canAttack = true;
+        }
         else if (!_playerTurn && _target != null)
         {
             SetArrow(false);
